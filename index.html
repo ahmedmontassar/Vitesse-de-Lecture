@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Vitesse de Lecture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titre">Calculateur de Vitesse de Lecture</h1>
+        <textarea id="textInput" placeholder="Entrez votre texte ici..."></textarea>
+        <button onclick="calculerMots()">Calculer</button>
+        <div id="resultats">
+            <div id="resultatMots"></div>
+            <div id="resultatChrono"></div>
+            <div id="resultatFautes"></div>
+            <div id="resultatMotsCorrects"></div>
+            <div id="resultatVitesse"></div>
+        </div>
+        <div id="chronometre">
+            <span id="temps">0s</span>
+            <button onclick="demarrerChronometre()">Démarrer</button>
+            <button onclick="arreterChronometre()">Arrêter</button>
+        </div>
+        <label for="nbFautes">Nombre de fautes :</label>
+        <input type="number" id="nbFautes" min="0" value="0">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
